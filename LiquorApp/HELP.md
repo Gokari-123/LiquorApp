@@ -25,3 +25,74 @@ While most of the inheritance is fine, it also inherits unwanted elements like `
 To prevent this, the project POM contains empty overrides for these elements.
 If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
 
+
+### Testing in Postman
+
+### 1 Get Api--> getAllLiquors 
+url : http://localhost:8080/api/liquors/
+
+response :
+[
+{
+"id": 1,
+"name": "Johnnie Walker",
+"type": "Whisky",
+"price": 1500.0
+},
+{
+"id": 2,
+"name": "Old Monk",
+"type": "Rum",
+"price": 500.0
+},
+{
+"id": 3,
+"name": "Kingfisher",
+"type": "Beer",
+"price": 150.0
+},
+{
+"id": 4,
+"name": "Remy Martin",
+"type": "Brandy",
+"price": 790.0
+},
+{
+"id": 5,
+"name": "BP",
+"type": "Brandy",
+"price": 1350.0
+}
+]
+
+### 2 Get Api--> gettype
+
+url: http://localhost:8080/api/liquors/type/Beer
+
+Response :
+[
+{
+"id": 3,
+"name": "Kingfisher",
+"type": "Beer",
+"price": 150.0
+}
+]
+
+### 3 Post Api--> bill
+url : http://localhost:8080/api/liquors/bill
+
+Request : 
+{
+"1": 3,
+"2": 3,
+"3": 3,
+"4": 3
+}
+
+Response :
+
+8820.0
+
+
+
