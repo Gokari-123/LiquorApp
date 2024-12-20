@@ -1,0 +1,7 @@
+LiquorApp\Entity\Liquor.class
+LiquorApp\Configuration\WebConfig.class
+LiquorApp\Controller\LiquorController.class
+LiquorApp\Repository\LiquorRepository.class
+LiquorApp\LiquorAppApplication.class
+LiquorApp\Configuration\WebConfig$1.class
+LiquorApp\DataLoader\DataLoader.class

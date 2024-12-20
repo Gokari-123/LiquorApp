@@ -10,12 +10,13 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-public class DataLoader implements CommandLineRunner {
+public class DataLoader {
+   // implements CommandLineRunner
 
     @Autowired
     LiquorRepository liquorRepository;
 
-    @Override
+  //  @Override
     public void run(String... args) throws Exception {
         // Pre-load some data
         List<Liquor> liquors = Arrays.asList(
